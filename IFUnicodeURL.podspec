@@ -1,8 +1,12 @@
 Pod::Spec.new do |s|
   s.name     = 'IFUnicodeURL'
-  
   s.version  = '1.1.0'
-  s.license  = <<EOS
+  s.ios.deployment_target = '4.3'
+  s.osx.deployment_target = '10.7'  
+  
+  s.license      = {
+     :type => 'BSD',
+     :text => <<-LICENSE
 Take note of the IDNSDK license which can be found in IDNSDK-1.1.0/doc. (The license is basically a BSD-like license.) 
 
 The IFUnicodeURL category is licensed under the Simplified BSD License as follows:
@@ -32,8 +36,8 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 The views and conclusions contained in the software and documentation are those of the
 authors and should not be interpreted as representing official policies, either expressed
 or implied, of Iconfactory, Inc.
-
-EOS
+     LICENSE
+  }
   
   s.summary  = 'Category to add internationalized domain name support to NSURL.'
   s.homepage = 'https://github.com/nxtbgthng/IFUnicodeURL'
